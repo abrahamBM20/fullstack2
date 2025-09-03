@@ -17,7 +17,6 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><h5>WU-TECH</h5></a>
-                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,8 +44,6 @@
                         </li>
                     </ul>
                 </div>
-                <button id="b1" class="bg-light">Registrarse</button>
-                <a href="iniciarSesion.html"><button id="b1" class="bg-light">Iniciar sesion</button></a>
             </div>
         </nav>
     </header>
@@ -61,17 +58,25 @@
                     <div class="card shadow">
                         <div class="card-body">
                             <!-- Tu contenido aquí -->
-                            <h4>"Soluciones tecnológicas integrales"</h4>
-                            <h6>Hardware de calidad y servicios informáticos profesionales</h6>
-                            <div class="d-flex justify-content-center align-items-center gap-3">
-                                <a href="productos.html"><button id="b1"class="bg-light">Productos</button></a>
-                                <button id="b1" class="bg-light">Servicios</button>
+                            <form class="form d-flex justify-content-center align-items-center gap-3">
+                                <div class="input-group">
+                                    <input type="text" id="user" placeholder=" " required>
+                                    <label for="user">Usuario</label>
+                                </div>
+                                <div class="input-group mt-3">
+                                    <input type="text" id="pass" placeholder=" ">
+                                    <label for="pass">Contraseña</label>
+                                </div>
+                                
+                            </form>
+
                             </div>   
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
 
     </main>
     <!-- deberia ir info de la empresa y derechos -->

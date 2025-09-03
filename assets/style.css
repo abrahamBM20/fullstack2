@@ -67,3 +67,23 @@ h4{
         .value {
             color: #34d399;
         }
+
+label{
+    position: absolute;
+    left: 13px;
+    top: 5px;
+    background-color: #f8fafc;
+    padding: 0px 5px;
+    font-size: 12px;
+    transition: 
+        transform 0.3s ease, color 0.3s ease;
+}
+
+input:focus + label{
+    transform: translateY(-15px);
+    color: #0052ff;
+}
+
+input:focus{
+    border-color: #0051ff;
+}
