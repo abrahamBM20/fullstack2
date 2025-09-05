@@ -1,13 +1,26 @@
-function captureValue(inputId, displayId, label) {
+function validarUsuario(inputId, label) {
             const input = document.getElementById(inputId);
-            const display = document.getElementById(displayId);
+
+            // 2. Crear elemento para mostrar mensajes
+            const mensajeError = document.createElement('div');
+            mensajeError.style.color = 'red';
+            mensajeError.style.marginTop = '5px';
+            
+            // 3. Insertar el mensaje después del input
+            input.parentNode.appendChild(mensajeError);
             
             input.addEventListener('change', function() {
-                display.textContent = `${label}: ${this.value || 'Vacío'}`;
                 console.log(`${label} capturado:`, this.value);
+                if(this.value.length < 3){
+                    console.log("nombre muy corto");
+                    mensajeError.textContent = 'Nombre muy corto (mínimo 3 caracteres)';
+                }else{
+                    console.log("usuario correcto");
+                    mensajeError.textContent = ' ';
+                };
             });
+
         }
 
-        // Configurar la captura para ambos campos
-        captureValue('user', 'userValue', 'Usuario');
-        captureValue('email', 'emailValue', 'Email');
+
+        validarUsuario('user', 'Usuario');
