@@ -1,4 +1,20 @@
-h1, h2, h3
-h4, h5, h6{
-    font-family: monospace
+/* assets/style.css */
+#titulo1 {
+    color: #007bff; /* Color azul para el título */
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* Ajusta las imágenes*/
 }
