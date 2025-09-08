@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><h5>WU-TECH</h5></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="contenidoNavbar">
@@ -36,10 +36,10 @@
                             Servicios
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Mantención de equipos</a></li>
+                            <li><a class="dropdown-item" href="#">Armado de PC</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Software a medida</a></li>
                         </ul>
                         </li>
                     </ul>
@@ -52,37 +52,45 @@
         </nav>
     </header>
     <!-- deberia ir contenido de la pagina -->
-    <main class="container-fluid min-vh-100 py-5">
+     <main class="container-fluid min-vh-100 py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-8">
-                    <!-- Contenido principal -->
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <!-- Tu contenido aquí -->
-                        </div>
+            <div class="col-12">
+                <!-- Contenido principal -->
+                <div class="card shadow">
+                <div class="card-body">
+                    <div class="row g-4" id="productos-container">
+                    <!-- Aquí se insertan las cards desde JS -->
                     </div>
                 </div>
+                </div>
+            </div>
             </div>
         </div>
+        </main>
 
-    </main>
     <!-- deberia ir info de la empresa y derechos -->
     <footer class="bg-dark text-light py-4 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3 mb-md-0">
-                    <h5>Derechos reservados 2025</h5>
+                    <h6>Derechos reservados 2025
+                        <br>
+                        WU-TECH venta y servicios de productos tecnológicos
+                    </h6>
                 </div>
                 <div class="col-md-4 mb-3 mb-md-0">
-                    <h5>Derechos reservados 2025</h5>
+
                 </div>
                 <div class="col-md-4">
-                    <h5>Derechos reservados 2025</h5>   
+                    <h6 class="justify-content-center">Siguenos en nuestras redes sociales</h6>
+                    <h1>    ..<a href=""><img src="img/icons8-facebook-nuevo-50.png" alt=""></a>
+                    <a href=""><img src="img/icons8-instagram-50.png" alt=""></a>
+                    <a href=""><img src="img/icons8-tik-tok-50.png" alt=""></a>..</h1>
+                    
                 </div>
             </div>
         </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>

@@ -68,22 +68,54 @@ h4{
             color: #34d399;
         }
 
-label{
-    position: absolute;
-    left: 13px;
-    top: 5px;
-    background-color: #f8fafc;
-    padding: 0px 5px;
-    font-size: 12px;
-    transition: 
-        transform 0.3s ease, color 0.3s ease;
+.input-group {
+  position: relative;
+  margin: 20px 0;
 }
 
-input:focus + label{
-    transform: translateY(-15px);
-    color: #0052ff;
+input.form-control {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
 }
 
-input:focus{
-    border-color: #0051ff;
+label.form-label {
+  position: absolute;
+  left: 13px;
+  top: 12px;
+  background-color: #ffffff;
+  padding: 0px 5px;
+  font-size: 14px;
+  color: #666;
+  pointer-events: none; /* para que el label no interfiera con el focus del input */
+  transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  z-index: 1; /* para que quede al frente del input */
+}
+
+/* Cuando el input está enfocado o tiene texto */
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  transform: translateY(-20px);
+  font-size: 12px;
+  color: #0052ff;
+}
+
+/* Estilo al input enfocado */
+input:focus {
+  border-color: #0052ff;
+}
+
+.enlaces {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.enlaces a {
+  text-decoration: none;
+  color: #007BFF; /* Puedes cambiar el color */
+  font-size: 14px;
 }

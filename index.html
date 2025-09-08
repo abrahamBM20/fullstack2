@@ -22,8 +22,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><h5>WU-TECH</h5></a>
-                
+                <img src="img/logo.png" alt="WU-TECH" width="70" height="70">
+                <a class="navbar-brand" href="#">  </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,7 +44,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Mantencion de equipos</a></li>
-                            <li><a class="dropdown-item" href="#">Armando de PC</a></li>
+                            <li><a class="dropdown-item" href="#">Armado de PC</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Software a medida</a></li>
                         </ul>
@@ -65,26 +65,103 @@
     <!-- deberia ir contenido de la pagina -->
     <main class="container-fluid min-vh-100 py-5">
         <div class="container">
+            <!-- Sección de bienvenida -->
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-8">
-                    <!-- Contenido principal -->
-                     <h1 id="titulo1">WU - TECH</h1>
-                     
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <!-- Tu contenido aquí -->
-                            <h4>"Soluciones tecnológicas integrales"</h4>
-                            <h6>Hardware de calidad y servicios informáticos profesionales</h6>
-                            <div class="d-flex justify-content-center align-items-center gap-3">
-                                <a href="productos.html"><button id="b1"class="bg-light">Productos</button></a>
-                                <button id="b1" class="bg-light">Servicios</button>
-                            </div>   
-                        </div>
+                <div class="col-12 col-lg-10 col-xl-8 text-center">
+                    <img src="img/logo.png" alt="WU-TECH" width="250" height="250">
+                    <h4 class="text-muted mb-4">"Soluciones tecnológicas integrales"</h4>
+                    <h6 class="mb-4">Hardware de calidad y servicios informáticos profesionales</h6>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <a href="productos.html" class="btn btn-primary">Explorar Productos</a>
+                        <a href="#" class="btn btn-outline-primary">Nuestros Servicios</a>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <!-- PRODUCTOS DESTACADOS DE WUTECH -->
+            <section class="mt-5">
+                <h2 class="text-center mb-4">Productos Destacados</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm h-100">
+                            <img src="img/producto1.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">PC Gamer RTX5090</h5>
+                                <p class="card-text">Potente computadora para gaming con procesador y graficos de última generación.</p>
+                                <a href="productos.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm h-100">
+                            <img src="img/producto2.jpg" class="card-img-top" alt="Producto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Gabinete RGB</h5>
+                                <p class="card-text">Gabinete Gamer RGB</p>
+                                <a href="productos.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm h-100">
+                            <img src="img/producto3.jpg" class="card-img-top" alt="Producto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Accesorios Gamer</h5>
+                                <p class="card-text">Teclados, ratones y más para optimizar tu experiencia de juego.</p>
+                                <a href="productos.html" class="btn btn-primary">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Servicios de WUTECH -->
+            <section class="mt-5">
+                <h2 class="text-center mb-4">Nuestros Servicios</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm h-100 text-center">
+                            <div class="card-body">
+                                <i class="bi bi-tools display-4 text-primary mb-3"></i>
+                                <h5 class="card-title">Mantenimiento de Equipos</h5>
+                                <p class="card-text">Reparación y optimización de computadoras y notebooks.</p>
+                                <a href="servicios.html" class="btn btn-outline-primary">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm h-100 text-center">
+                            <div class="card-body">
+                                <i class="bi bi-pc-display display-4 text-primary mb-3"></i>
+                                <h5 class="card-title">Armado de PC</h5>
+                                <p class="card-text">Construimos tu PC personalizado según tus necesidades.</p>
+                                <a href="servicios2.html" class="btn btn-outline-primary">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm h-100 text-center">
+                            <div class="card-body">
+                                <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+                                <h5 class="card-title">Software a Medida</h5>
+                                <p class="card-text">Desarrollo de soluciones personalizadas para tu negocio.</p>
+                                <a href="servicios3.html" class="btn btn-outline-primary">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacta con WUTECH -->
+            <section class="mt-5 text-center">
+                <h3>¿Listo para mejorar tu experiencia tecnológica?</h3>
+                <p>Contacta con nosotros o explora nuestro catálogo completo.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="contactoUbicaciones.html" class="btn btn-primary">Contáctanos</a>
+                    <a href="productos.html" class="btn btn-outline-primary">Ver Todos los Productos</a>
+                </div>
+            </section>
+        </div>
     </main>
     <!-- deberia ir info de la empresa y derechos -->
     <footer class="bg-dark text-light py-4 mt-5">

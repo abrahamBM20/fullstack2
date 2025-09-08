@@ -16,9 +16,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><h5>WU-TECH</h5></a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="img/logo.png" alt="WU-TECH" width="70" height="70">
+                <a class="navbar-brand" href="#">  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="contenidoNavbar">
@@ -45,8 +45,14 @@
                         </li>
                     </ul>
                 </div>
-                <button id="b1" class="bg-light md-8">Registrarse</button>
-                <a href="iniciarSesion.html"><button id="b1" class="bg-light">Iniciar sesion</button></a>
+                <div class="btn-group-responsive">
+                    <a href="registroUsuario.html">
+                        <button id="b1" class="bg-light">Registrarse</button>
+                    </a>
+                    <a href="iniciarSesion.html">
+                        <button id="b1" class="bg-light">Iniciar sesión</button>
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -54,7 +60,7 @@
     <main class="container-fluid min-vh-100 py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-8 mt-5">
+                <div class="col-12 col-lg-10 col-xl-8">
                     <!-- Contenido principal -->
                      <div class="d-flex justify-content-center mt-5">
                         <h1 id="titulo1" class="mt-5">WU - TECH</h1>
@@ -64,16 +70,16 @@
                             <!-- Formulario con mejor espaciado -->
                             <form class="form form-container">
                                 <div class="input-group">
-                                    <input type="text" id="user" class="form-control" placeholder=" " required>
+                                    <input type="text" id="user" class="form-control" placeholder="  " required>
                                     <label for="user" class="form-label">Nombre completo</label>                    
                                 </div>
                                 <div class="input-group mt-3">
-                                    <input type="password" id="correo" class="form-control" placeholder=" ">
-                                    <label for="pass" class="form-label">Correo</label>
+                                    <input type="text" id="correo" class="form-control" placeholder=" ">
+                                    <label for="correo" class="form-label">Correo</label>
                                 </div>
                                 <div class="input-group mt-3">
-                                    <input type="password" id="correo" class="form-control" placeholder=" ">
-                                    <label for="pass" class="form-label">Confirmar correo</label>
+                                    <input type="text" id="correo1" class="form-control" placeholder=" ">
+                                    <label for="correo1" class="form-label">Confirmar correo</label>
                                 </div>
                                 <div class="input-group mt-3">
                                     <input type="password" id="pass" class="form-control" placeholder=" ">
@@ -81,13 +87,15 @@
                                 </div>
                                 <div class="input-group mt-3">
                                     <input type="password" id="pass2" class="form-control" placeholder=" ">
-                                    <label for="pass" class="form-label">Confirmar contraseña</label>
+                                    <label for="pass2" class="form-label">Confirmar contraseña</label>
                                 </div>
                                 <div class="input-group mt-3">
-                                    <input type="password" id="number" class="form-control" placeholder=" ">
-                                    <label for="pass" class="form-label">Telefono / celular</label>
+                                    <input type="text" id="number" class="form-control" placeholder=" ">
+                                    <label for="pass" class="form-label">Telefono / celular (opcional)</label>
                                 </div>
-                                <div id="userValue" class="value-display">Usuario: Esperando entrada...</div>
+                                <div class="enlaces">
+                                    <a href="iniciarSesion.html">Ya tengo una cuenta</a>
+                                </div>
                                 
                             </form>
                             <div class="d-flex justify-content-center mt-4">
