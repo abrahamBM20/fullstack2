@@ -90,12 +90,11 @@ label.form-label {
   padding: 0px 5px;
   font-size: 14px;
   color: #666;
-  pointer-events: none; /* para que el label no interfiera con el focus del input */
+  pointer-events: none;
   transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
-  z-index: 1; /* para que quede al frente del input */
+  z-index: 1;
 }
 
-/* Cuando el input está enfocado o tiene texto */
 input:focus + label,
 input:not(:placeholder-shown) + label {
   transform: translateY(-20px);
@@ -103,7 +102,6 @@ input:not(:placeholder-shown) + label {
   color: #0052ff;
 }
 
-/* Estilo al input enfocado */
 input:focus {
   border-color: #0052ff;
 }
@@ -116,6 +114,7 @@ input:focus {
 
 .enlaces a {
   text-decoration: none;
-  color: #007BFF; /* Puedes cambiar el color */
+  color: #007BFF;
   font-size: 14px;
 }
+
