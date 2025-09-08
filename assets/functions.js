@@ -4,13 +4,13 @@
 //Todas las imagenes deberian estar en la misma resolución -> 250 x 250 px probar con 300 o 350 para ver como queda.
 // https://www.img2go.com/es/cambiar-tamano-de-imagen
 const productos=[
-    {id:0,nombre:"RTX 6080 Marca Blanca",precio:5000000,imagen:"assets\img\RTX6080MarcaBlanca.png"},
-    {id:1,nombre:"Pasta Termica Pastero",precio:15000,imagen:"assets\img\PastaTermicaPastero.png"},
-    {id:2,nombre:"Gabinete Negro",precio:58000,imagen:"assets\img\GabineteNegroNegro.png"}
+    {id:0,nombre:"RTX 6080 Marca Blanca",precio:5000000,imagen:"assets/img/RTX6080MarcaBlanca.png"},
+    {id:1,nombre:"Pasta Termica Pastero",precio:15000,imagen:"assets/img/PastaTermicaPastero.png"},
+    {id:2,nombre:"Gabinete Negro",precio:58000,imagen:"assets/img/GabineteNegroNegro.png"}
 ]
 
-
-function displayProducts(){
+//Función del profe
+/*function displayProducts(){
     const container=document.getElementById("product-list");
     container.innerHTML="";
     productos.forEach((productos,index)=>{
@@ -30,4 +30,32 @@ function displayProducts(){
         container.appendChild(card);
     });
 }
-displayProducts()
+displayProducts()*/
+//Función con agregado de precio a CLP y boton de agregar al carrito
+function displayProducts(){
+    const container = document.getElementById("product-list");
+    container.innerHTML = "";
+            
+    productos.forEach((producto, index) => {
+        const card = document.createElement("div");
+        card.className = "col-md-4";
+                
+        // Formatear el precio en CLP (pesos chilenos)
+        const formattedPrice = new Intl.NumberFormat('es-CL', {
+            style: 'currency',
+            currency: 'CLP'
+        }).format(producto.precio);
+                
+        card.innerHTML = `
+            <div class="product-card">
+                <img src="${producto.imagen}" class="product-image" alt="${producto.nombre}">
+                <h3 class="h5 mt-3">${producto.nombre}</h3>
+                <p class="product-price">${formattedPrice}</p>
+                <button class="btn btn-primary" onclick="addToCart(${index})">Agregar al carrito</button>
+            </div>
+            `;
+        container.appendChild(card);
+    });
+    }
+    displayProducts()
+
