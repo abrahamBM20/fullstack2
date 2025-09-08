@@ -1,12 +1,16 @@
 /* assets/style.css */
+
+/* Estilo para el título principal (ya tenías esto, lo mantengo) */
 #titulo1 {
     color: #007bff; /* Color azul para el título */
     font-weight: bold;
 }
 
+/* Estilo para botones principales (ya tenías esto, lo mantengo con transiciones) */
 .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
+    transition: all 0.3s ease; /* Nueva: Suaviza el hover para mejor UX en todas las páginas */
 }
 
 .btn-primary:hover {
@@ -14,7 +18,101 @@
     border-color: #0056b3;
 }
 
+/* NUEVO: Estilo para botones outline (usado en index.html para "Nuestros Servicios") */
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+    transition: all 0.3s ease; /* Nueva: Transición suave */
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Estilo para imágenes en tarjetas (ya tenías esto, lo mantengo para productos y blogs) */
 .card-img-top {
     height: 200px;
-    object-fit: cover; /* Ajusta las imágenes*/
+    object-fit: cover; /* Ajusta las imágenes */
+}
+
+/* NUEVO: Estilo para íconos de Bootstrap Icons (usado en servicios.html para bi-tools, bi-pc-display, etc.) */
+.bi {
+    color: #007bff; /* Azul consistente con el tema de WU-TECH */
+    transition: color 0.3s ease; /* Nueva: Cambio suave al hover si se necesita */
+}
+
+/* NUEVO: Estilo para íconos grandes en servicios (display-4 en servicios.html) */
+.bi.display-4 {
+    font-size: 4rem; /* Asegura tamaño grande */
+    margin-bottom: 1rem;
+}
+
+/* NUEVO: Ajustes para las tarjetas (usado en productos, servicios y blogs para hover y sombra) */
+.card {
+    transition: transform 0.2s ease; /* Nueva: Transición para efecto hover */
+    border: none; /* Quita borde por defecto para un look más limpio */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Nueva: Eleva la tarjeta al hover, para interactividad en todas las páginas */
+}
+
+.card.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; /* Refuerza la sombra sutil de Bootstrap */
+}
+
+/* NUEVO: Estilo para texto lead (usado en portadas de index, servicios y blogs para párrafos introductorios) */
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #6c757d; /* Gris suave para legibilidad */
+    margin-bottom: 1.5rem;
+}
+
+/* NUEVO: Estilo para texto muted (usado en fechas de blogs.html y subtítulos) */
+.text-muted {
+    color: #6c757d !important; /* Refuerza el gris de Bootstrap para consistencia */
+    font-size: 0.875rem; /* Tamaño más pequeño para fechas y subtítulos */
+}
+
+/* NUEVO: Ajustes para secciones y espaciados (para mt-5 y section en todas las páginas) */
+section {
+    margin-bottom: 3rem; /* Espacio consistente entre secciones */
+}
+
+.mt-5 {
+    margin-top: 3rem !important; /* Refuerza el margen superior de Bootstrap para mejor separación */
+}
+
+/* NUEVO: Estilo para texto centrado en tarjetas (usado en servicios.html) */
+.card-body.text-center {
+    text-align: center;
+}
+
+.card-title {
+    color: #007bff; /* Azul para títulos de tarjetas en productos, servicios y blogs */
+    font-weight: bold;
+}
+
+/* NUEVO: Responsividad general para móviles (ajuste para col-md-4/6 en todas las páginas) */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px; /* Reduce altura de imágenes en móviles */
+    }
+    
+    .bi.display-4 {
+        font-size: 3rem; /* Íconos más pequeños en móviles */
+    }
+    
+    .lead {
+        font-size: 1.1rem; /* Texto lead más legible en pantallas pequeñas */
+    }
+}
+
+/* NUEVO: Estilo para fechas en blogs (específico para blogs.html) */
+.card-text small.text-muted {
+    display: block;
+    margin-bottom: 0.5rem;
 }
