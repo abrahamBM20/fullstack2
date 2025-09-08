@@ -1,3 +1,4 @@
+
 function validarUsuario(inputId, label) {
             const input = document.getElementById(inputId);
             // 2. Crear elemento para mostrar mensajes
@@ -103,4 +104,3 @@ function compararPass(inputId1, inputId2) {
 validarPass('pass');
 compararPass('pass','pass2');
 
-//============================================================================================================================
